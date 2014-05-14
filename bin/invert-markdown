@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var invertMarkdown = require('../');
+var fs = require('fs');
+
+var program = require('commander');
+
+program
+  .version('0.0.1')
+  .usage('[options] <file>')
+  .parse(process.argv);
+
+var input = fs.readFileSync(program.args[0]).toString('utf8');
+var output = invertMarkdown(input);
+
+process.stdout.write(output);

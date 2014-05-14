@@ -1,0 +1,32 @@
+{
+  "name": "invert-markdown",
+  "version": "0.0.1",
+  "description": "inverts markdown code, converting fenced code into the body and markdown into comments",
+  "main": "index.js",
+  "bin": {
+    "invert-markdown": "bin/invert-markdown"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benatkin/invert-markdown.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Benjamin Atkin <ben@benatkin.com> (http://benatkin.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benatkin/invert-markdown/issues"
+  },
+  "homepage": "https://github.com/benatkin/invert-markdown",
+  "dependencies": {
+    "commander": "^2.2.0",
+    "optimist": "^0.6.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2"
+  }
+}
